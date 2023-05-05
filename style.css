@@ -45,6 +45,9 @@ nav p{
 .nav-list{
     display: none;
 }
+.login-register-div{
+    display: none;
+}
 /* end of navigation style */
 
 .main-img{
@@ -94,4 +97,96 @@ footer{
 footer img{
     inline-size: 20%;
     block-size: auto;
+}
+
+/* desktop media */
+@media only screen and (min-width: 768px) {
+    main{
+        min-inline-size: 48rem;
+    }
+    header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        
+    }
+
+   .burger-menu{
+    display: none;
+   }
+   select{
+    background-color: var(--almost-white);
+    border: none;
+    font-size: 1rem;
+   } 
+   nav{
+    justify-content:start;
+    gap: 2rem;
+    inline-size: 70%;
+    
+   }
+    .nav-list{
+   
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    inline-size: 70%;
+    list-style: none;
+    outline: none;
+    
+   
+   }
+   .nav-list a{
+    color: var(--almost-black);
+    text-decoration: none;
+   }
+   .login-register-div{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    width: 30%;
+    align-items: center;
+
+   }
+   .login-register-div a{
+    display: block;
+    text-decoration: none;
+    color: var(--almost-black);
+   }
+   .register-btn{
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border:1.5px solid var(--medium-gray);
+    border-radius:15px;
+   }
+   h1{
+    font-size: 2.5rem;
+    text-align: left;
+   }
+   .main-content{
+    text-align: left;
+    padding-top: 0;
+   }
+   .desktop-flex{
+    margin-top:2rem;
+    margin-inline: auto;
+    inline-size: 90%;
+    gap:2rem;
+    display: flex;
+    align-items: end;
+    justify-content:space-between;
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+    align-items: end;
+   }
+    .desktop-img{
+    inline-size: 100%;
+    block-size: auto;
+   }
+    .btn-readmore{
+    margin-left: 0;
+   }
 }

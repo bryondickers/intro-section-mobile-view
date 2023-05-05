@@ -22,35 +22,59 @@
     <header>
       <nav>
         <p>snap</p>
-        <ul class="nav-list">
-          <li>
-            <select name="" id="">Features</select>
-          </li>
-          <li>
-            <select name="" id="">Company</select>
-          </li>
-          <li>Careers</li>
-          <li>About</li>
-        </ul>
-        <a href="http://">
+        <a class="burger-menu" href="http://">
           <svg width="32" height="18" xmlns="http://www.w3.org/2000/svg"><g fill="#151515" fill-rule="evenodd"><path d="M0 0h32v2H0zM0 8h32v2H0zM0 16h32v2H0z"/></g></svg>
         </a>
+        <ul class="nav-list">
+          <li>
+            <a href="http://">
+              <select name="" id="">
+                <option value="">Features</option>
+              </select>
+            </a>
+          </li>
+          <li>
+            <a href="http://">
+              <select name="" id="">
+                <option value="">Company</option>
+              </select>
+            </a>
+          </li>
+          <li>
+            <a href="http://">Careers</a>
+          </li>
+          <li>
+            <a href="http://">About</a>
+          </li>
+        </ul>
       </nav>
+      <div class="login-register-div">
+        <a href="http://">Login</a>
+        <a class="register-btn" href="http://">Register</a>
+      </div>
     </header>
-    <img class="main-img" src="./images/image-hero-mobile.png" alt="" srcset="">
-    <article>
-      <h1>Make remote work</h1>
-      <p class="main-content">Get your team in sync, no matter your location. Streamline processes, 
-        create team rituals, and watch productivity soar.
-      </p>
-      <a class="btn-readmore" href="http://">Learn more</a>
-    </article>
-    <footer>
-      <img src="./images/client-databiz.svg" alt="" srcset="">
-      <img src="./images/client-audiophile.svg" alt="" srcset="">
-      <img src="./images/client-meet.svg" alt="" srcset="">
-      <img src="./images/client-maker.svg" alt="" srcset="">  
-    </footer>
+    <div class="desktop-flex">
+      <picture>
+        <source class="desktop-img" media="(min-width:768px)" srcset="./images/image-hero-desktop.png">
+        <img class="main-img" src="./images/image-hero-mobile.png" alt="" srcset="">
+      </picture> 
+    
+      <div class="desktop-content-div">
+        <article>
+          <h1>Make remote work</h1>
+          <p class="main-content">Get your team in sync, no matter your location. Streamline processes, 
+            create team rituals, and watch productivity soar.
+          </p>
+          <a class="btn-readmore" href="http://">Learn more</a>
+        </article>
+        <footer>
+          <img src="./images/client-databiz.svg" alt="" srcset="">
+          <img src="./images/client-audiophile.svg" alt="" srcset="">
+          <img src="./images/client-meet.svg" alt="" srcset="">
+          <img src="./images/client-maker.svg" alt="" srcset="">  
+        </footer>
+    </div>
+    </div>
   </main>
 
   <!-- Features
